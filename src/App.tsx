@@ -6,12 +6,14 @@ import Error404Page from "./pages/Error404";
 
 export default function App() {
   return (
-    <main>
+    <>
       <MainHeader />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="*" element={<Error404Page />} />
-      </Routes>
-    </main>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="*" element={<Error404Page />} />
+        </Routes>
+      </main>
+    </>
   )
 }
