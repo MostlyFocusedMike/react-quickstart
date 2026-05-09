@@ -1,19 +1,13 @@
-import { Routes, Route } from "react-router";
-import HomePage from "./pages/Home";
+import { AllFactors } from './components/AllFactors';
+import { Quadratic } from './components/Quadratic';
 import './index.css';
-import MainHeader from "./components/MainHeader";
-import Error404Page from "./pages/Error404";
 
 export default function App() {
   return (
-    <>
-      <MainHeader />
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<Error404Page />} />
-        </Routes>
-      </main>
-    </>
+    <main>
+      <h1>Math Tools I like</h1>
+      <AllFactors />
+      <Quadratic />
+    </main>
   )
 }
